@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.title {
+  color: darkslategrey;
+}
+
+.get-data-from-user {
+  margin: 2rem 0;
+}
+
+.get-data-from-user input {
+  padding: 0.7rem;
+  font-size: 13px;
+  margin-right: 1rem;
+  border: none;
+  outline: 1px solid lightblue;
+  color: darkslategrey;
+}
+
+.get-data-from-user input:focus {
+  outline: none;
+  outline: 1px solid lightskyblue;
+}
+
+.add-player {
+  padding: 0.7rem 2rem;
+  border: none;
+  background-color: lightskyblue;
+  color: darkslategrey;
+  transition: background-color 0.1s ease;
+}
+
+.add-player:active {
+  background-color: lightblue;
+}
+
+.add-player:focus {
+  outline: none;
+}
+
+.error {
+  display: none;
+  color: red;
+  margin: 1rem;
+  font-weight: bolder;
+}
+
+.players-sec {
+    margin: 2rem 4rem;
+}
+
+.player-div {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.player-details {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-btns {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.edit-btns div {
+    cursor: pointer;
+    margin: rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+    background-color: white ;
+}
+
+.del-btn, .minus-five-btn {
+    color: red;
+}
+.plus-five-btn {
+    color: green;
+}

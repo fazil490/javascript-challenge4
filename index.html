@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player Leaderboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <h1 class="title">Player Leaderboard</h1>
+      <div class="get-data-from-user" id="get-data-from-user" required>
+        <form id="input-form">
+          <input
+            placeholder="First Name"
+            type="text"
+            name="first-name"
+            id="first-name"
+          />
+          <input
+            placeholder="Last Name"
+            type="text"
+            name="last-name"
+            id="last-name"
+          />
+          <input
+            placeholder="Country"
+            type="text"
+            name="country"
+            id="country"
+          />
+          <input
+            placeholder="Player Score"
+            type="number"
+            name="score"
+            id="score"
+            min="0"
+          />
+          <button type="submit" class="add-player" id="add-player">Add Player</button>
+        </form>
+        <p class="error" id="error">All fields are required.</p>
+      </div>
+    </header>
+
+    <main class="players-sec" id="players-sec">
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
